@@ -15,9 +15,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const Scaffold(
-        body: SizedBox(),
-        //change to TipX()
-      ), 
+        body: SafeArea(
+          child: SizedBox(),
+          //change to TipX()
+        ),
+      ),
     );
   }
 }
